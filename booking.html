@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Hotel Management System</h1>
+    <p>Enjoy 15% off on all bookings! Limited Time Offer</p>
+  </header>
+  <main>
+    <section id="bookingSection">
+      <h2>Book a Room</h2>
+      <form id="bookingForm">
+        <label for="customerName">Your Name:</label>
+        <input type="text" id="customerName" placeholder="Enter your name" required><br>
+
+        <label for="hotelSelect">Select Hotel:</label>
+        <select id="hotelSelect" required>
+          <option value="" disabled selected>Select Hotel</option>
+          <option value="Taj Mahal Palace">Taj Mahal Palace, Hyderabad</option>
+          <option value="Umaid Bhawan Palace">Umaid Bhawan Palace, Secuderabad</option>
+          <option value="Rose Mansion">Rose Mansion, Nampally</option>
+        </select><br>
+
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" onchange="showRoomNumbers()" required>
+          <option value="" disabled selected>Select Room Type</option>
+          <option value="Standard Room">Standard Room - ₹5000</option>
+          <option value="Double Room">Double Room - ₹8000</option>
+          <option value="Deluxe Suite">Deluxe Suite - ₹12000</option>
+          <option value="Heritage Room">Heritage Room - ₹15000</option>
+        </select><br>
+
+        <label for="roomNumber">Room Number:</label>
+        <select id="roomNumber" required>
+          <option value="" disabled selected>Select Room Number</option>
+        </select><br>
+
+        <label for="checkInDate">Check-In Date:</label>
+        <input type="date" id="checkInDate" required><br>
+
+        <label for="checkOutDate">Check-Out Date:</label>
+        <input type="date" id="checkOutDate" required><br>
+
+        <label for="totalAmount">Total Amount:</label>
+        <input type="text" id="totalAmount" readonly><br>
+
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        <button type="submit">Book Room</button>
+      </form>
+    </section>
+
+    <section id="roomAvailability">
+      <h2>Room Availability</h2>
+      <ul id="roomAvailabilityList"></ul>
+    </section>
+  </main>
+  <script src="booking.js"></script>
+</body>
+</html>

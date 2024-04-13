@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="photos.css">
+    <title>Rooms</title>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <div class="container">
+                <h1>ElHotel</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="booking.html">Book a Room</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="rooms">
+        <div class="container">
+            <h2>Our Rooms</h2>
+                  <label for="roomType">Filter by Room Type:</label>
+                  <select id="roomType" onchange="filterRooms()">
+                    <option value="all">All Rooms</option>
+                    <option value="Standard Room">Standard Room</option>
+                    <option value="Double Room">Double Room</option>
+                    <option value="Deluxe Suite">Deluxe Suite</option>
+                    <option value="Heritage Room">Heritage Room</option>
+                  </select>
+                
+                <div id="roomList" class="scrollable"></div>
+              </section>
+        </div>
+    </section>
+    <section class="room-photos-scroll">
+        <div class="container">
+            <br>
+            <h2>Standard Rooms</h2>
+            <div class="gallery-scroll">
+                <div class="gallery-inner">
+                    <div class="photo-scroll">
+                        <img src="https://th.bing.com/th?id=OIF.5uKymemWPJAoD0%2f3uz04Gw&rs=1&pid=ImgDetMain" alt="Standard Room 1">
+                    </div>
+                    <div class="photo-scroll">
+                        <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_3721,h_2094,r_0,c_crop,q_60,fl_progressive/w_1366,c_fit,f_auto/hotel-hyderabad-grand/Facade_Hotel_Hyderabad_Grand_Hyderabad_3_ibvye8" alt="Standard Room 2">
+                    </div>
+                    <div class="photo-scroll">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/e6/67/40/exterior-view.jpg?w=900&h=-1&s=1" alt="Standard Room 3">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2>Double Rooms</h2>
+            <div class="gallery-scroll">
+                <div class="gallery-inner">
+                    <div class="photo-scroll">
+                        <img src="https://www.ahstatic.com/photos/8824_ho_00_p_1024x768.jpg" alt="Deluxe Room 1">
+                    </div>
+                    <div class="photo-scroll">
+                        <img src="https://www.bestwesternashoka.com/wp-content/uploads/2019/06/stay-primium.jpg" alt="Deluxe Room 2">
+                    </div>
+                    <div class="photo-scroll">
+                        <img src="https://pix10.agoda.net/property/3967468/88634895/b784955dd3b16aa6784ca324f4762b40.jpg" alt="Deluxe Room 3">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2>Heritage Rooms</h2>
+            <div class="gallery-scroll">
+                <div class="gallery-inner">
+                    <div class="photo-scroll">
+                        <img src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2017/08/15/1317/Hyatt-Place-Hyderabad-Banjara-Hills-R002-Night-View.jpg/Hyatt-Place-Hyderabad-Banjara-Hills-R002-Night-View.16x9.adapt.1920.1080.jpg" alt="Luxury Room 1">
+                    </div>
+                    <div class="photo-scroll">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/fd/17/06/guest-room.jpg" alt="Luxury Room 2">
+                    </div>
+                    <div class="photo-scroll">
+                        <img src="https://th.bing.com/th/id/OIP.h0EUFb1Am1UjEqrNJZoPqAHaE8?rs=1&pid=ImgDetMain" alt="Luxury Room 2">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="room-photos-scroll">
+        <div class="container">
+            <h2>Deluxe Rooms</h2>
+            <div class="gallery-scroll">
+                <div class="gallery-inner">
+                <div class="photo-scroll">
+                    <img src="https://cache.marriott.com/marriottassets/marriott/DELAL/delal-king-room-5932-hor-clsc.jpg?interpolation=progressive-bilinear&" alt="Room 1" >
+                </div>
+                <div class="photo-scroll">
+                    <img src="https://th.bing.com/th/id/R.e8d2d5d7a6f3030e6d03029d9a4f099a?rik=gSZlLh4YFXHZiQ&riu=http%3a%2f%2fcache.marriott.com%2fmarriottassets%2fmarriott%2fKULDT%2fkuldt-guestroom-0017-hor-clsc.jpg%3finterpolation%3dprogressive-bilinear%26&ehk=BQ7VeRfLjW8N0eRd9UHX3MHfTSMQmxEuBNN%2fUw%2flMD0%3d&risl=&pid=ImgRaw&r=0" alt="Room 2">
+                </div>
+                <div class="photo-scroll">
+                    <img src="https://cache.marriott.com/marriottassets/marriott/GNVAC/gnvac-guestroom-0013-hor-clsc.jpg?interpolation=progressive-bilinear&" alt="Room 3">
+                </div>
+                <div class="photo-scroll">
+                    <img src="https://cache.marriott.com/marriottassets/marriott/SJDLC/sjdlc-guestroom-8082-hor-clsc.jpg?interpolation=progressive-bilinear&" alt="Room 5">
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+    
+    
+

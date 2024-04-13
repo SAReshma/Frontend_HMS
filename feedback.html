@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="photos.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>ElHotel</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="booking.html">Book a Room</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="feedback">
+        <div class="container">
+            <h2>Customer Feedback</h2>
+            <div class="sort">
+                Sort by Rating:
+                <button onclick="sortFeedback('asc')">Lowest to Highest</button>
+                <button onclick="sortFeedback('desc')">Highest to Lowest</button>
+            </div>
+            <table class="feedback-table" id="feedbackTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Review</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>Priya K</td>
+                    <td>A wonderful experience, highly recommended!</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Laxman</td>
+                    <td>Great ambiance and friendly staff!</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Kavya</td>
+                    <td>Room service was slow, but overall good stay.</td>
+                    <td>3</td>
+                </tr>
+                <!-- Add more feedback entries as needed -->
+            </table>
+        </div>
+    </section>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
+
